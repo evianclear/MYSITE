@@ -1,28 +1,89 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-items: legacy;
-    background-image:url("../../assets/images/the-dog-house-multihold-tile.webp");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: legacy;
+  background-image: url("../../assets/images/the-dog-house-multihold-tile.webp");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
-.icons{
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    gap: 4px;
+.icons {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 4px;
+}
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 85px;
+  height: 85px;
+
+  border-radius: 10px;
+
+  background-color: #ffffff;
 }
-.header {
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+
+    li {
+        padding: 4px 12px;
+        background-color: #ffffff;
+
+        border-radius: 10px;
+    
+    a{
+        color: #000000;
+        text-decoration: none;
+    }
+}
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+    padding: 10px;
+
+    width: 400px;
+    
+    h1 {
+        font-size: 40px;
+        color: white;
+        text-decoration: underline;
+    }
+}
+ button {
+    font-size: 18px;
+    color: maroon;
     padding: 8px 16px;
-    font-size: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+ }
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 8px 16px;
+  font-size: 20px;
 .svg-icon {
-    width: 26px;
-    height: 26px;
-}
+    width: 50px;
+    height: 50px;
+  }
 }
